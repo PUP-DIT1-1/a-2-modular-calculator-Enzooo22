@@ -67,6 +67,5 @@ return;
 
 System.out.println("Thank you for using the calculator");
 
-
  }
 }
