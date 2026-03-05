@@ -8,12 +8,7 @@ System.out.println("Modular Calculator");
 System.out.println("Press 1 if you want to continue or press anything else to exit");
 int nu = sc.nextInt();
 
-if (nu == 5){
-System.out.println("Goodbye!");
-return;
-}
-
-else if (nu == 1) {
+ if (nu == 1) {
 
 System.out.println("Enter a number");
 double num1 = sc.nextDouble();
