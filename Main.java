@@ -4,7 +4,7 @@ static Scanner sc = new Scanner (System.in);
 
 public static void main(String[] args) {
 
-System.out.println("Welcome to the Basic calculator!");
+System.out.println("Modular Calculator");
 System.out.println("Press 1 if you want to continue or press 5 to exit");
 int nu = sc.nextInt();
 
@@ -28,26 +28,29 @@ System.out.println("""
                    """);
 char op = sc.next(). charAt(0);
 
+System.out.println("Enter Modulus:");
+double modu=sc.nextDouble();
+
 double ans;
 
 switch (op) {
 case '+':
-ans = num1 + num2;
+ans = (num1 + num2) % modu;
 System.out.println("Answer: " +ans);
 break;
 
 case '-':
-ans = num1 - num2;
+ans = (num1 - num2) % modu;
 System.out.println("Answer: " +ans);
 break;
 
 case '*':
-ans = num1 * num2; 
+ans = (num1 * num2) % modu; 
 System.out.println("Answer: " +ans);
 break;
 
 case '/':
-ans = num1 / num2;
+ans = (num1 / num2) % modu;
 System.out.println("Answer: " +ans);
 break;
 
@@ -62,7 +65,6 @@ System.out.println("Invalid number");
 return;
 }
 
-System.out.println("Thank you for using the calculator");
-
+System.out.println("Thank you for using the modular calculator");
  }
 }
