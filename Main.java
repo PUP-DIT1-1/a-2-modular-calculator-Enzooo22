@@ -5,7 +5,7 @@ static Scanner sc = new Scanner (System.in);
 public static void main(String[] args) {
 
 System.out.println("Modular Calculator");
-System.out.println("Press 1 if you want to continue or press 5 to exit");
+System.out.println("Press 1 if you want to continue or press anything else to exit");
 int nu = sc.nextInt();
 
 if (nu == 5){
@@ -61,7 +61,7 @@ return;
 }
 
 else {
-System.out.println("Invalid number");
+System.out.println("Goodbye!");
 return;
 }
 
